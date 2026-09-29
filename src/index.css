@@ -9,3 +9,34 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/*Barra navegación*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8%;
+  background-color:#2b1511 ;
+  color: white;
+}
+
+.logo{
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+.navbar ul {
+  padding: 10px 30 px;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px;
+  
+}
