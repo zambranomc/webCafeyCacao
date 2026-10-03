@@ -13,69 +13,88 @@ a {
 /*Barra navegación*/
 
 .navbar {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color:#2b1511 ;
-  color: white;
+  padding: 1rem 3rem;
+  background-color: #2b1d14; 
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.logo{
-  max-height: 80px;
+.logo {
+  height: 45px;
   width: auto;
   object-fit: contain;
 }
 
 
-.menu-icon {
-  display: none; /* Ocultar el icono por defecto en pantallas grandes */
-  cursor: pointer;
-  font-size: 1.5rem;
-}
 
+/* Menú en pantallas de escritorio */
 .nav-menu {
   display: flex;
   list-style: none;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-.nav-menu li {
-  margin-left: 1rem;
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
 }
 
-/* Media query para pantallas pequeñas (móviles) */
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #d4a373;
+  border-bottom: 2px solid #d4a373;
+}
+
+/* El ícono se oculta por defecto en computadoras */
+.menu-icon {
+  display: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Vista para dispositivos móviles (Menú hamburguesa) */
 @media screen and (max-width: 768px) {
   .menu-icon {
-    display: block; /* Mostrar el icono en pantallas pequeñas */
+    display: block;
+  
   }
-
-  .logo{
-  max-height: 50px;
-  width: auto;
-  object-fit: contain;
-}
 
   .nav-menu {
-    display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Ajustar según la altura de tu navbar */
+    top: 70px;
     left: 0;
     width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: rgba(245, 241, 241, 0.726);
+    align-items: center;
+    
   }
 
+  /* Despliega el menú cuando el estado es active */
   .nav-menu.active {
-    display: flex; /* Mostrar el menú cuando tenga la clase 'active' */
+    display: flex;
+  
   }
 
   .nav-menu li {
+    font-size: 1rem;
     margin: 1rem;
     text-align: center;
-    color: black;
   }
+
+  .nav-menu li a {
+    color: #d4a373;
+  }
+
 }
