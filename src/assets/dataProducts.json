@@ -1,0 +1,77 @@
+{
+  "cafes": [
+    {
+      "id": "1",
+      "imagen": "/public/image/cafeGranoEspecial1.jpg", 
+      "nombre": "Café en Grano Especial",
+      "producto": "Origen Mérida Supremo",
+      "formato": "En grano",
+      "origen": "Mérida, Cordillera de los Andes",
+      "tostado": "Medio",
+      "percepcion_sabor": "Suave y Frutal",
+      "experiencia_gusto": "Entrada delicada con acidez limpia y jugosa; resaltan matices cítricos y un fino aroma floral.",
+      "precio": "$ 5,50"
+    },
+    {
+      "id": "2",
+      "imagen": "/public/image/cafeGranoFuerte2.jpg", 
+      "nombre": "Café en Grano",
+      "producto": "Reserva Caripito Alto",
+      "formato": "En grano",
+      "origen": "Caripito, Monagas",
+      "tostado": "Oscuro",
+      "percepcion_sabor": "Fuerte",
+      "experiencia_gusto": "De cuerpo denso y carácter robusto; deja un posgusto prolongado a chocolate amargo y especias.",
+      "precio": "$ 4,00"
+    },
+    {
+      "id": "3",
+      "imagen": "/public/image/cafeMolidoEspecial3.jpg", 
+      "nombre": "Café Molido Especial",
+      "producto": "Boconó Tradicional",
+      "formato": "Molido",
+      "origen": "Boconó, Trujillo",
+      "tostado": "Medio-Oscuro",
+      "percepcion_sabor": "Medio",
+      "experiencia_gusto": "Perfil clásico y reconfortante; sabor profundo y especiado, ideal para tomar concentrado o con leche.",
+      "precio": "$ 5,50"
+    },
+    {
+      "id": "4",
+      "imagen": "/public/image/cafeMolidoMedio4.jpg", 
+      "nombre": "Café Molido",
+      "producto": "Aroma Caripe Especial",
+      "formato": "Molido",
+      "origen": "Caripe, Monagas",
+      "tostado": "Medio",
+      "percepcion_sabor": "Suave",
+      "experiencia_gusto": "Sedoso e indulgente; combina el dulzor natural de la caña de azúcar con matices cálidos de frutos secos.",
+      "precio": "$ 5,50"
+    },
+    {
+      "id": "5",
+      "imagen": "/public/image/cafeCapsulaMedio5.jpg", 
+      "nombre": "Café en Cápsulas Medio",
+      "producto": "Café de Origen Santa Cruz",
+      "formato": "Cápsula",
+      "origen": "Valle de Santa Cruz, Aragua",
+      "tostado": "Medio",
+      "percepcion_sabor": "Suave y Frutal",
+      "experiencia_gusto": "Taza ligera y refrescante donde resaltan notas a moras y manzana roja sobre un sutil fondo de frutos secos.",
+      "precio": "$ 6,00"
+    },
+    {
+      "id": "6",
+      "imagen": "/public/image/cafeCapsulaIntenso6.jpg", 
+      "nombre": "Café en Cápsulas Intenso",
+      "producto": "Cápsula Espresso Sanare",
+      "formato": "Cápsula",
+      "origen": "Sanare, Lara",
+      "tostado": "Oscuro",
+      "percepcion_sabor": "Fuerte",
+      "experiencia_gusto": "Extracción concentrada de gran cuerpo y amargor fino, dejando un marcado sabor a malta y cacao puro.",
+      "precio": "$ 6,00"
+    }
+ 
+  ]
+}

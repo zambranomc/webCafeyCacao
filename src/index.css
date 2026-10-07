@@ -62,8 +62,233 @@ a {
   cursor: pointer;
 }
 
-/* Vista para dispositivos móviles (Menú hamburguesa) */
+/*ProductsLayout Layout */
+
+.banner-container{
+  position: relative;
+  width: 100%; 
+  height: 250px; 
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+/* Contenedor de texto superpuesto sobre la imagen */
+.banner-text {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Flexbox para alinear en línea (horizontal) y centrar */
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en línea */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 80px; /* Espacio entre el h2 y el p */
+  
+  /* Estilos visuales para resaltar sobre la imagen */
+  
+  color: black;
+  padding: 0 80px 0 0 ;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+/* Ajustes de tipografía */
+.banner-text h2 {
+  margin: 0;
+  font-size: 3.5rem;
+  white-space: nowrap; /* Evita que el título se divida en varias líneas */
+}
+
+.banner-text p {
+  margin: 0 20px 0 0;
+  font-size: 1.2rem;
+}
+
+
+/*Products page */
+
+.products-container {
+  width: 100%;
+  margin: 0 auto;    /* Centra horizontalmente */
+  padding: 0 20px;   /* Mantiene margen interno sin salirse */
+  box-sizing: border-box;
+}
+
+.products-box{
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;             /* Permite pasar los elementos a la siguiente fila */
+  justify-content: center;     /* Centra las tarjetas horizontalmente */
+  gap: 20px;                   /* Espacio exacto entre tarjetas */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.products-card {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  box-sizing: border-box
+}
+
+.products-image-container {
+  width: 100%;  /* Ancho reducido fijo */
+  height: auto; /* Alto reducido fijo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  
+}
+
+.products-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen completa sin recortarla ni deformarla */
+  display: block;
+}
+
+.products-info{
+  text-align: center;
+  padding: 2px;
+}
+
+.products-title{
+  color: #cc0000;
+}
+
+.products-type{
+ font-size: 15px;
+}
+
+.products-price{
+  color: #cc0000
+}
+
+/*Products Detail - component*/
+
+.productsDetail-box{
+  width: 98%;
+  height: 500px;
+  margin: 0 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow:  0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.productsDetail-img{
+  height: 100%;
+  width: auto;
+ 
+}
+
+.productsDetail-text{
+  padding: 40px;
+  line-height: 2rem;
+
+}
+
+.productsDetail-detail{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productsDetail-name{
+  color: #cc0000;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productsDetail-price{
+  color: #cc0000;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*Botones de productsDetail*/
+
+.btn-products {
+  display: inline-flex;     /* Mantiene el botón en línea con otros elementos */
+  align-items: center;       /* Alinea el icono y texto verticalmente al centro */
+  justify-content: center;   /* Centra el contenido horizontalmente dentro del botón */
+  gap: 8px;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px 5px 5px 200px;
+  background-color: transparent;
+  color: #2b1d14;             /* Color de la barra de navegación */
+  border: 1.5px solid #d4a373; /* Detalle de selección */
+}
+
+.btn-products:hover{
+  background-color: #d4a373;
+  color: #ffffff;
+}
+
+.btn-products:active{
+  transform: translateY(1px);
+}
+
+.btn-cart {
+  display: inline-flex;     /* Mantiene el botón en línea con otros elementos */
+  align-items: center;       /* Alinea el icono y texto verticalmente al centro */
+  justify-content: center;   /* Centra el contenido horizontalmente dentro del botón */
+  gap: 8px;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #cc0000;   /* Rojo de títulos y precios */
+  color: #ffffff;
+  border: 1.5px solid #cc0000;
+  box-shadow: 0 3px 8px rgba(204, 0, 0, 0.25);
+}
+
+.btn-cart:hover {
+  color: #cc0000;
+  background-color: white;   /* Rojo más intenso */
+  border-color: #cc0000;
+  box-shadow: 0 4px 12px rgba(204, 0, 0, 0.35);
+}
+
+.btn-cart:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(204, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* Vista para dispositivos móviles  */
 @media screen and (max-width: 768px) {
+
+  /* Vista para dispositivos móviles (Menú hamburguesa) */
   .menu-icon {
     display: block;
   
@@ -96,5 +321,76 @@ a {
   .nav-menu li a {
     color: #d4a373;
   }
+
+  /*Vista dispositivos moviles  ProductsLayout*/
+
+  /* Contenedor de texto superpuesto sobre la imagen */
+  .banner-text {
+    position: absolute;
+    top: 0;
+  
+    width: 100%;
+    height: 100%;
+    
+    /* Flexbox para alinear en línea (horizontal) y centrar */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 0; /* Espacio entre el h2 y el p */
+    
+    /* Estilos visuales para resaltar sobre la imagen */
+    
+    color: black;
+    padding: 10px 80px 10px 50px ;
+    margin-top: 60px;
+    box-sizing: border-box;
+  }
+
+  /* Ajustes de tipografía */
+  .banner-text h2 {
+    margin: 10px;
+    font-size: 3rem;
+    white-space: nowrap; /* Evita que el título se divida en varias líneas */
+  }
+
+  .banner-text p {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /*Ajuste  contenedor products*/
+
+  .products-box{
+    margin-top: 20px;
+
+  }
+
+  /*Ajuste productsDetail */
+
+  .productsDetail-box{
+  width: 98%;
+  height: 800px;
+  margin: 0 2px 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow:  0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.productsDetail-img{
+  
+  width: 300px;
+  height: 300px;
+ 
+}
+
+
+
+
+
 
 }
