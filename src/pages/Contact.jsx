@@ -4,8 +4,8 @@ import React from "react";
 
 const Contact = () => {
     return(
-        <div>
-            <h1>Página Contacto</h1>
+        <div className="contact-page-container">
+            <p className="contact-title">Queremos conocerte</p>
         </div>
     )
 }
