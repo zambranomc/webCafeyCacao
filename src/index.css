@@ -240,6 +240,7 @@ a {
   background-color: transparent;
   color: #2b1d14;             /* Color de la barra de navegación */
   border: 1.5px solid #d4a373; /* Detalle de selección */
+  cursor: pointer;
 }
 
 .btn-products:hover{
@@ -264,11 +265,12 @@ a {
   color: #ffffff;
   border: 1.5px solid #cc0000;
   box-shadow: 0 3px 8px rgba(204, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .btn-cart:hover {
   color: #cc0000;
-  background-color: white;   /* Rojo más intenso */
+  background-color: white;   
   border-color: #cc0000;
   box-shadow: 0 4px 12px rgba(204, 0, 0, 0.35);
 }
@@ -278,12 +280,225 @@ a {
   box-shadow: 0 1px 3px rgba(204, 0, 0, 0.2);
 }
 
+/*Contact Page*/
+.contact-page-container{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-title{
+  color: #2b1d14;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 200px;
+  margin-top: 1.2rem;
+  margin-bottom: -1.2rem;
+}
+
+/*ContactForm  Components   */
+
+.contactForm-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+
+}
+
+/*ContactForm Formulario*/
+.contactForm{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*ContactForm Label*/
+.contactForm-label{
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+  color: #2b1d14;
+}
+
+/*ContactForm Input*/
+.contactForm-intext{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d4a373;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  size: 30;
+}
+
+/*ContactForm TextArea*/
+.contatcForm-textA{
+  width: 100%;
+  min-height: 120px;
+  padding: 0.5rem;
+  border: 1px solid #d4a373;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+/*ContactForm Boton*/
+.btn-contactForm{
+  display: inline-flex;     /* Mantiene el botón en línea con otros elementos */
+  align-items: center;       /* Alinea el icono y texto verticalmente al centro */
+  justify-content: center;   /* Centra el contenido horizontalmente dentro del botón */
+  gap: 8px;
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #2b1d14;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-contactForm:hover{
+ background-color: #d4a373;
+ color:#2b1d14;
+}
+
+
+
+/*ContactForm img*/
+.contactForm-imgbox{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contactForm-img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/*ContactInfo components*/
+
+.contactInfo-box1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #d4a373;
+
+}
+
+
+.contactInfo-box2{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.contactInfo-imgbox{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.contactInfo-img{
+  width: 480px;
+  height: auto;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.contactInfo-infobox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.contatcInfo-titlebox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo-title{
+  color: #2b1d14;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+
+}
+
+.contactInfo-infoA{
+  color: #2b1d14;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contactInfo-infoA:hover{
+  color: white;
+  text-shadow: 2px 2px 4px #2b1d14;
+}
+
+.contactInfo-info{
+  display: inline-flex; 
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+  gap: 2rem;
+}
+
+.contactInfo-info1{
+  display: inline-flex; 
+  align-items: center;
+  text-align: left;
+  margin-left: -15rem;
+  font-size: 1rem;
+  gap: 2rem;
+}
+
+.contactInfo-icon{ 
+  height: 4em;
+  width: 4em;
+}
+
+.contactInfo-icon1{ 
+  height: 2em;
+  width: 2em;
+}
 
 
 
 
 
 
+
+
+
+/*------------------------------------------------------------------------------------------------*/
 
 /* Vista para dispositivos móviles  */
 @media screen and (max-width: 768px) {
@@ -301,7 +516,7 @@ a {
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: rgba(245, 241, 241, 0.726);
+    background-color:#d4a373;
     align-items: center;
     
   }
@@ -319,7 +534,7 @@ a {
   }
 
   .nav-menu li a {
-    color: #d4a373;
+    color: white;
   }
 
   /*Vista dispositivos moviles  ProductsLayout*/
@@ -381,16 +596,85 @@ a {
   box-shadow:  0 3px 13px 1px rgb(0 0 0 / 9%);
 }
 
-.productsDetail-img{
-  
-  width: 300px;
-  height: 300px;
- 
+  .productsDetail-img{
+      width: 300px;
+      height: 300px;
+
+  }
+
+  .btn-products {
+      margin: 0;
+      align-self: center;
+  }
+
+  .btn-cart {
+      align-self: center;
+  }
+
+  /*Vista dispositivos moviles  ContactForm ContactInfo Contact page*/
+
+    /*Ajuste ContactForm component*/
+  .contactForm-box{
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+
+  .contactForm{
+    width: 350px;
+  }
+
+
+
+  /*Ajuste Contact Page*/
+
+  .contact-page-container{
+    justify-content: center;
+  }
+
+  .contact-title{
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  /*Ajuste ContactInfo component*/
+
+  .contactInfo-box1{
+     flex-direction: column-reverse;
+    padding: 0.3rem;
+
+  }
+
+.contactInfo-box2{
+  flex-direction: column-reverse;
+  padding: 0.3rem;
 }
 
+.contactInfo-info{
+  padding-left: 2.5rem;
+  gap: 1rem;
+}
 
+.contactInfo-info1{
+  padding-left: 2.5rem;
+  gap: 1rem;
+}
 
+.contactInfo-icon{ 
+  height: 2em;
+  width: 2em;
+}
 
+.contactInfo-icon1{ 
+  height: 1em;
+  width: 1em;
+}
+
+.contactInfo-img{
+  width: 400px;
+  height: auto;
+
+}
+ 
 
 
 }
