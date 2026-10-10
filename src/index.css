@@ -490,6 +490,144 @@ a {
   width: 2em;
 }
 
+/*AboutLayuot Components About-page AboutCoffee*/
+
+.aboutpage-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  margin-top: -20px;
+  background-color: #2b1d14;
+}
+
+.aboutpage-imgbox{
+  width: 95%;
+  height: 100px;
+  margin: 20px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  0 3px 13px 1px rgb(0 0 0 / 9%);
+}
+
+.aboutpage-img{
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.aboutpage-imgMovil{
+ display: none;
+
+}
+
+.aboutpage-titleH{
+  color: white;
+}
+
+.aboutpage-info{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin: 10px 40px 30px 40px;
+}
+
+.aboutpage-info p{
+  color: white;
+  text-indent: 3rem;
+  margin-bottom: 10px;
+}
+
+/*AboutLayuot Components AboutCoffee*/
+
+.aboutCoffee-box{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 4rem 0 2rem;
+  background-color: white;
+}
+
+.aboutCoffee-imgbox{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.aboutCoffee-img{
+ object-fit: cover;
+}
+
+.aboutCoffe-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.aboutCoffee-titleH{
+  color: #2b1d14;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.aboutCoffe-info p {
+  display: inline-flex; 
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+  margin-bottom: 10px;
+  color: #2b1d14;
+}
+
+.aboutInfo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.aboutCoffee-btnbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-aboutCoffe{
+   display: inline-flex;     /* Mantiene el botón en línea con otros elementos */
+  align-items: center;       /* Alinea el icono y texto verticalmente al centro */
+  justify-content: center;   /* Centra el contenido horizontalmente dentro del botón */
+  gap: 8px;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  background-color: #d4a373;
+  color: #2b1d14;             /* Color de la barra de navegación */
+  border: 1.5px solid #d4a373; /* Detalle de selección */
+  cursor: pointer;
+}
+
+.btn-aboutCoffe:hover{
+  background-color: white;
+  color: #2b1d14;             /* Color de la barra de navegación */
+  border: 1.5px solid #d4a373; /* Detalle de selección */
+}
+
+.btn-aboutCoffe:active{
+  transform: translateY(1px);
+}
 
 
 
@@ -644,37 +782,62 @@ a {
 
   }
 
-.contactInfo-box2{
-  flex-direction: column-reverse;
-  padding: 0.3rem;
-}
+  .contactInfo-box2{
+    flex-direction: column-reverse;
+    padding: 0.3rem;
+  }
 
-.contactInfo-info{
-  padding-left: 2.5rem;
-  gap: 1rem;
-}
+  .contactInfo-info{
+    padding-left: 2.5rem;
+    gap: 1rem;
+  }
 
-.contactInfo-info1{
-  padding-left: 2.5rem;
-  gap: 1rem;
-}
+  .contactInfo-info1{
+    padding-left: 2.5rem;
+    gap: 1rem;
+  }
 
-.contactInfo-icon{ 
-  height: 2em;
-  width: 2em;
-}
+  .contactInfo-icon{ 
+    height: 2em;
+    width: 2em;
+  }
 
-.contactInfo-icon1{ 
-  height: 1em;
-  width: 1em;
-}
+  .contactInfo-icon1{ 
+    height: 1em;
+    width: 1em;
+  }
 
-.contactInfo-img{
-  width: 400px;
-  height: auto;
+  .contactInfo-img{
+    width: 400px;
+    height: auto;
 
-}
- 
+  }
+
+  /*Vista dispositivos moviles  AboutLayout*/
+  
+  .aboutpage-img{
+  display: none;
+  }
+
+  .aboutpage-imgMovil{
+    display: flex;
+
+  }
+
+  .aboutCoffee-box{
+     flex-direction: column;
+  }
+
+  .aboutCoffee-imgbox{
+    padding: 1rem;
+  }
+
+  .aboutCoffee-img{
+    width: 70%;
+    height: auto;
+  }
+
+
 
 
 }
