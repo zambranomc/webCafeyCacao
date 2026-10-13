@@ -1,5 +1,5 @@
 import React from "react";
-import cafeCremoso from '../assets/cafeCremoso.jpg';
+import cafecremoso from '../assets/cafecremoso.jpg';
 import cosechaCafe from '../assets/cosechaCafe.jpg';
 import chocolateCafe from '../assets/chocolateCafe.jpg';
 import chocolate from '../assets/chocolate.jpg';
@@ -17,7 +17,7 @@ const About = () => {
                 <img src={maquinaTostadoCafe} className="aboutpage-img" alt="maquita de tostar café" />
                 <img src={maquinaTostadoCafe} className="aboutpage-imgMovil" alt="maquita de tostar café" />
                 <img src={chocolateCafe} className="aboutpage-img" alt="chocolate y cafe venezolano" />
-                <img src={cafeCremoso} className="aboutpage-img" alt="taza de cafe mocca" />
+                <img src={cafecremoso} className="aboutpage-img" alt="taza de cafe mocca" />
                 <img src={chocolate} className="aboutpage-img" alt="chocolate" />
             </div>
             <div className="aboutpage-title">
