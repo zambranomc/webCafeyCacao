@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import productsData from "../assets/dataProducts.json";
 
 
 const Products = () => {
 
-    const productsData = useLoaderData();
+    
 
     return (
         <section className="products-container">
@@ -41,9 +41,3 @@ export default Products;
 
 
 
-export const productsLoader = async () => {
-  
-    const res = await fetch("http://localhost:5000/cafes");
-
-     return  res.json();
-};

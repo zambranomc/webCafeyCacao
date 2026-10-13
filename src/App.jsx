@@ -9,11 +9,11 @@ import {
 
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
-import Products, { productsLoader } from "./pages/Products";
+import Products from "./pages/Products";
 import About from "./pages/About";
 //import Contact from "./pages/Contact";
 import ProductsLayout from "./layout/ProductsLayout";
-import ProductsDetail, { productsDetailLoader } from "./components/ProductsDetail";
+import ProductsDetail from "./components/ProductsDetail";
 import ContactLayout from "./layout/ContactLayout";
 import ContactForm from "./components/ContactForm";
 import ContactInfo from "./components/ContactInfo";
@@ -33,8 +33,8 @@ const router = createBrowserRouter(
       </Route>
       
       <Route path="products" element={<ProductsLayout /> } >
-        <Route index element={<Products /> } loader={productsLoader} />
-        <Route path=":id" element={<ProductsDetail/> } loader={productsDetailLoader} />
+        <Route index element={<Products /> }  />
+        <Route path=":id" element={<ProductsDetail/> }  />
       </Route>
       
       <Route path="about" element={ <AboutLayout /> } >

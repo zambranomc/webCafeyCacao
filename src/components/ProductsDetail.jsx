@@ -1,14 +1,16 @@
 import React from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaAngleDoubleRight  } from "react-icons/fa";
-import Products from "../pages/Products";
+import productsData from "../assets/dataProducts.json";
 
 
 
 const ProductsDetail  = () => {
 
-    const productsDetail = useLoaderData();
+    const { id } = useParams();
     const navigate = useNavigate();
+
+    const productsDetail = productsData.find((item) => item.id.toString() === id);
 
     return (
         <div className="productsDetail-box">
@@ -42,9 +44,3 @@ const ProductsDetail  = () => {
 export default ProductsDetail;
 
 
-export const productsDetailLoader = async ({params}) => {
-    const {id} =params;
-    const res = await fetch("http://localhost:5000/cafes/" + id);
-    return res.json();
-
-}
