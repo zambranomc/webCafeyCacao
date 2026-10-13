@@ -10,7 +10,7 @@ import {
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import About from "./pages/About";
+//import About from "./pages/About";
 //import Contact from "./pages/Contact";
 import ProductsLayout from "./layout/ProductsLayout";
 import ProductsDetail from "./components/ProductsDetail";
