@@ -29,15 +29,15 @@ const Home = () =>{
 
             <div className="homePage-imgProductsbox">
                 <Link to='/products/3' >
-                    <img src="public/image/cafeMolidoEspecial3.jpg" className="homePage-imgProducts" alt="cafe molido especial" />
+                    <img src="/image/cafeMolidoEspecial3.jpg" className="homePage-imgProducts" alt="cafe molido especial" />
                 </Link>
 
                 <Link to='/products/2'>
-                    <img src="public/image/cafeGranoFuerte2.jpg" className="homePage-imgProducts" alt="cafe en grano fuerte" />
+                    <img src="/image/cafeGranoFuerte2.jpg" className="homePage-imgProducts" alt="cafe en grano fuerte" />
                 </Link>
                    
                 <Link to='/products/5'>
-                    <img src="public/image/cafeCapsulaMedio5.jpg" className="homePage-imgProducts" alt="cafe en capsula medio" />
+                    <img src="/image/cafeCapsulaMedio5.jpg" className="homePage-imgProducts" alt="cafe en capsula medio" />
                 </Link>
                 
             </div>
