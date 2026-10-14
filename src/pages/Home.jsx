@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import cafeycacaoweb from '../assets/cafeycacaoweb.jpg';
-import AboutCoffe from '../components/AboutCoffee';
 import { FaSearch } from "react-icons/fa";
+import AboutCoffee from "../components/AboutCoffee";
 
 
 
@@ -42,7 +42,7 @@ const Home = () =>{
                 
             </div>
 
-           <AboutCoffe />
+           <AboutCoffee />
        
             
         </div>
