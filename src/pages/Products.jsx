@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import productsData from "../assets/dataProducts.json";
+import dataProducts from "../assets/dataProducts.json";
+import { FaSearch } from "react-icons/fa";
 
 
 const Products = () => {
 
+    const [ buscarPalabra, setBuscarPalabra] = useState("");
     
+    const filtrarProducts = dataProducts.filter((cafe) => {
+        const query = buscarPalabra.toLowerCase().trim();
+
+        const igualNombre = cafe.nombre.toLowerCase().includes(query);
+        const igualKeywords = cafe.keywords ? cafe.keywords.some(keyword => keyword.toLowerCase().includes(query)) : false;
+          return igualNombre || igualKeywords;
+        
+    });
 
     return (
         <section className="products-container">
+            <div className="buscar-box">
+                <input type="text" className="productsbuscar-box" 
+                placeholder= "Busca tu café preferido aquí, café, molido, grano, chocolate" 
+                value={buscarPalabra}
+                onChange={(e) => setBuscarPalabra(e.target.value)} />
+            </div>
+
             <div className="products-box">
             
-                {productsData.map((cafe)=>{
+            {filtrarProducts.length > 0 ? (
+                filtrarProducts.map((cafe)=>{
                     return( 
                         <div key={cafe.id} className="products-card">
                             <Link to={`/products/${cafe.id}`}  >
@@ -27,8 +45,11 @@ const Products = () => {
                             
                             </Link>
                         </div>
-                        )
-                })}
+                        );
+                })
+            ) : (
+                <p>No se encontraron productos</p>
+            )}
             </div>
 
         </section>
