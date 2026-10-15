@@ -16,7 +16,7 @@ const Footer = () => {
                     
                 </div>
                 <div className="footer-info">
-                    <p className="footer-infofaicon"><FaEnvelope />kfekko@gmail.com</p>
+                    <p className=" footer-fa"><FaEnvelope />kfekko@gmail.com</p>
                 </div>   
             </div>
             <div className="footer-boxcolumn">

@@ -9,7 +9,8 @@
     "tostado": "Medio",
     "percepcion_sabor": "Suave y Frutal",
     "experiencia_gusto": "Entrada delicada con acidez limpia y jugosa; resaltan matices cítricos y un fino aroma floral.",
-    "precio": "$ 5,50"
+    "precio": "$ 5,50",
+    "keywords":["grano", "suave", "cafe", "medio", "merida", "andes"]
   },
   {
     "id": "2",
@@ -21,7 +22,8 @@
     "tostado": "Oscuro",
     "percepcion_sabor": "Fuerte",
     "experiencia_gusto": "De cuerpo denso y carácter robusto; deja un posgusto prolongado a chocolate amargo y especias.",
-    "precio": "$ 4,00"
+    "precio": "$ 4,00",
+    "keywords":["grano", "fuerte", "cafe", "oscuro", "caripito", "monagas"]
   },
   {
     "id": "3",
@@ -33,7 +35,8 @@
     "tostado": "Medio-Oscuro",
     "percepcion_sabor": "Medio",
     "experiencia_gusto": "Perfil clásico y reconfortante; sabor profundo y especiado, ideal para tomar concentrado o con leche.",
-    "precio": "$ 5,50"
+    "precio": "$ 5,50",
+    "keywords":["molido", "medio", "cafe", "oscuro", "bocono", "trujillo"]
   },
   {
     "id": "4",
@@ -45,7 +48,8 @@
     "tostado": "Medio",
     "percepcion_sabor": "Suave",
     "experiencia_gusto": "Sedoso e indulgente; combina el dulzor natural de la caña de azúcar con matices cálidos de frutos secos.",
-    "precio": "$ 5,50"
+    "precio": "$ 5,50",
+    "keywords":["molido", "suave", "cafe", "medio", "caripe", "monagas"]
   },
   {
     "id": "5",
@@ -57,7 +61,8 @@
     "tostado": "Medio",
     "percepcion_sabor": "Suave y Frutal",
     "experiencia_gusto": "Taza ligera y refrescante donde resaltan notas a moras y manzana roja sobre un sutil fondo de frutos secos.",
-    "precio": "$ 6,00"
+    "precio": "$ 6,00",
+    "keywords":["capsula", "suave", "cafe", "medio", "cruz", "aragua"]
   },
   {
     "id": "6",
@@ -69,7 +74,34 @@
     "tostado": "Oscuro",
     "percepcion_sabor": "Fuerte",
     "experiencia_gusto": "Extracción concentrada de gran cuerpo y amargor fino, dejando un marcado sabor a malta y cacao puro.",
-    "precio": "$ 6,00"
+    "precio": "$ 6,00",
+    "keywords":["capsula", "expreso", "cafe", "fuerte", "sanare", "lara"]
+  },
+   {
+    "id": "7",
+    "imagen": "/image/chocosarrapia.jpg", 
+    "nombre": "Chocolate con Sarrapia",
+    "producto": "Chocolate 70% cacao Chuao",
+    "formato": "Barra",
+    "origen": "Chuao, Aragua",
+    "tostado": "Medio",
+    "percepcion_sabor": "Suave",
+    "experiencia_gusto": "Textura cremosa, suave y aterciopelada, sabor intenso a cacao con toque dulce de la sarrapia.",
+    "precio": "$ 3,00",
+    "keywords":["chocolate", "cacao", "barra", "suave", "chuao", "aragua"]
+  },
+    {
+    "id": "8",
+    "imagen": "/image/chococaribe.jpg", 
+    "nombre": "Chocolate 70% cacao",
+    "producto": "Chocolate 70% cacao Rio Caribe",
+    "formato": "Barra",
+    "origen": "Rio Caribe, Sucre",
+    "tostado": "Medio",
+    "percepcion_sabor": "Medio",
+    "experiencia_gusto": "Textura cremosa, suave y aterciopelada, sabor intenso a cacao.",
+    "precio": "$ 3,00",
+    "keywords":["chocolate", "cacao", "barra", "medio", "caribe", "sucre"]
   }
  
 ]
