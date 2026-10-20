@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneAlt, FaStore, FaClock, FaWhatsapp} from "react-icons/fa";
+import { FaStore, FaClock, FaWhatsapp} from "react-icons/fa";
 import degustarCafe from '../assets/degustarCafe.jpg';
 
 

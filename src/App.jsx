@@ -19,6 +19,7 @@ import ContactForm from "./components/ContactForm";
 import ContactInfo from "./components/ContactInfo";
 import AboutLayout from "./layout/AboutLayout";
 import AboutCoffee from "./components/AboutCoffee";
+import ProductsCart from "./components/ProductsCart";
 
 // Se crea el router fuera de la función del componente
 const router = createBrowserRouter(
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
       <Route path="products" element={<ProductsLayout /> } >
         <Route index element={<Products /> }  />
         <Route path=":id" element={<ProductsDetail/> }  />
+        <Route path="cart" element={<ProductsCart/> }  />
       </Route>
       
       <Route path="about" element={ <AboutLayout /> } >

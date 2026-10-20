@@ -21,7 +21,7 @@ const Products = () => {
         <section className="products-container">
             <div className="buscar-box">
                 <input type="text" className="productsbuscar-box" 
-                placeholder= "Busca tu café preferido aquí, café, molido, grano, chocolate" 
+                placeholder= "Busca tu café preferido aquí, chocolate" 
                 value={buscarPalabra}
                 onChange={(e) => setBuscarPalabra(e.target.value)} />
             </div>
@@ -40,7 +40,7 @@ const Products = () => {
                             <div className="products-info">
                                 <h4 className="products-title">{cafe.nombre} </h4>
                                 <p className="products-type">{cafe.producto} </p>
-                                <p className="products-price">Precio:  {cafe.precio} </p>
+                                <p className="products-price">Precio:  ${cafe.precio} </p>
                             </div>
                             
                             </Link>
