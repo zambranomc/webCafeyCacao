@@ -1,16 +1,55 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ☕ KFE & KKO — Tienda Online de Café y Cacao
 
-Currently, two official plugins are available:
+¡Bienvenido al repositorio de **KFE & KKO**! Una aplicación web de comercio electrónico, diseñada para ofrecer una selección exclusiva de café y chocolate  artesanal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+🔗 **Enlaces a repositorios** 
+GitHub: https://github.com/zambranomc/webCafeyCacao
+Vercel: https://web-cafey-cacao.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Características principales
+* **Catálogo dinámico:** Carga de productos gestionada de forma local a través de un archivo estructurado en formato JSON (`dataProducts.json`).
+* **Navegación fluida (SPA):** Implementada con React Router DOM para una experiencia de usuario rápida y sin recargas de página.
+* **Diseño responsivo:** Adaptado para verse de manera óptima tanto en dispositivos móviles como en pantallas de escritorio.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 🛠️ Tecnologías y Herramientas
+Este proyecto fue construido utilizando:
+* **[React Router DOM](https://reactrouter.com/)** - Manejo de rutas y navegación.
+* **[Vite](https://vitejs.dev/)** - Herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y ágil para proyectos web modernos.
+* **[React](https://react.dev/)** - Biblioteca de JavaScript para la interfaz de usuario.
+* **HTML5/Estructura y marcado semántico de la página web. 
+* **CSS / Estilos personalizados** - Diseño visual y estructuración de componentes
+* **[GitHub](https://github.com/)** - Control de versiones y alojamiento del repositorio de código. 
+* **[Vercel](https://vercel.com/)** - Hosting y despliegue continuo.
+
+---
+
+## 📂 Estructura de Datos
+La información de los artículos mostrados en la tienda se encuentra centralizada en un archivo local:
+
+src/
+ ├── assets/
+          └── dataProducts.json  # Contiene el listado, precios y descripciones de café y cacao
+ ├── components/ 
+	└── AboutCoffee.jsx
+   	└──ContactForm.jsx # Formulario
+	└──ContactInfo.jsx
+	└──Footer.jsx 
+	└──Navbar.jsx
+	└──ProductsCart.jsx
+	└──ProductsDetail.jsx
+ ├──  pages/         # Vistas principales conectadas por React Router Dom
+	└──About.jsx
+	└──Contact.jsx
+	└──Home.jsx
+	└──Products.jsx
+ └── App.jsx
+ └── Index.css
+
